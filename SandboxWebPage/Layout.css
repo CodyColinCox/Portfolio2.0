@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container{
+    width: 100%;
+    margin: 0 auto
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    background: rgba(5, 176, 255, 0.5);
+    color: #f1f1f1;
+    min-height: 8vh;
+    width: 100%;
+    padding: 20px;
+  }
+  .logo{
+    display: flex;
+    width: 80px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+  
+  }
+
+  .nav-links{
+    display: flex;
+    background-color:lightblue;
+    justify-content: space-around;
+    width: 30%;
+
+  }
+
+  .nav-links li{
+    list-style: none;
+  }
+
+  .nav-links a{
+    color: rgb(128, 50, 6);
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .burger{
+    display: none;
+  }
+
+  .burger div{
+    width: 25px;
+    height: 5px;
+    background-color: rgb(128, 50, 6);;
+    margin: 5px;
+  }
+
+  @media screen and (max-width: 768px)
+  {
+    body
+    {
+      display: none;
+
+    }
+
+  }
+  
+  @media screen and (max-width: 768px)
+  {
+    .nav-links{
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: rgb(128, 50, 6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translate(100%);
+
+  }
+}
+  
+
+  /* this is for ul tag */
+  .menu{
+    float:right;
+  }
+  .menu li{
+    float:left;
+    width:120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    list-style: none;
+  }
+  .menu li a{
+    background-color: rgba(206, 9, 9, 0.774);
+    color: #f1f1f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    display:block;
+  }
+  .menu li:hover{
+    background: #C0C0C0
+  }
+  .menu li a:hover{
+    color: #C0C0C0
+  }
+  /* Style the video: 100% width and height to cover the entire window */
+  #myVideo  {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(75%);
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  
+  .paragraph {
+    
+    width: 100%;
+    background: rgba(0, 0, 0, .85);
+    color: #f1f1f1;
+    padding: 20px;
+    font-size: 14pt;
+  }
+  
+  .blog {
+    text-align: center;
+    background: rgba(0, 0, 0, .50);
+    padding: 100px;
+    margin: 20px;
+    color: #f1f1f1;
+    padding: 20px;
+    font-size: 12pt;
+  }
+  
+  .headers {
+    font-style: italic;
+    width: 800px;
+    padding: 100px;
+    margin: 20px;
+    background: rgba(0, 0, 0, .50);
+    color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .contact {
+    text-align: center;
+    font-style: oblique;
+    width: 800px;
+    padding: 100px;
+    margin: 20px;
+    background: rgba(0, 0, 0, .50);
+    color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-rows: 100px 300px;
+  }
+  
+  div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid #73AD21;
+  }
+
+  p {
+    color:rgb(244, 248, 8);
+    text-align: center;
+    font-size: 50px;
+  } 
+
+  h1 {
+    color:rgb(20, 173, 220);
+    text-align: center;
+    border-style: double;
+    border-top: crimson;
+    border-bottom: rgb(1, 58, 1);
+  }
+
+  h4{
+    color:rgb(20, 173, 220);
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 5px;
+
+  }
+  h5
+  {
+    color: rgb(58, 10, 233);
+    font-size: 40px;
+    font-style: italic;
+    font-style: bold;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  h6
+  {
+    color: rgba(0, 12, 5, 0.74);
+    font-size: 40px;
+    font-style: oblique;
+    text-align: center; right: auto;
+    display: -ms-inline-flexbox;
+    width: 100%;
+    padding: 5px;
+
+  }
+  
+  li{
+    display: inline-block;
+    margin: 7px;
+  }
+  
+  body{
+    margin: 0%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+  }
+
+  .img-Hawaii
+  { height: 900px;
+    max-width: 100%;
+    opacity: 2; 
+    background-image:url(img/Hawaii.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  .img-USMC
+  { height: 900px;
+    max-width: 100%;
+    opacity: 2; 
+    background-image:url(img/USMC.PNG);
+    background-size: 40;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  
+  .img-USMC:hover
+  {
+ 
+    background-size: 65%;
+
+  }
